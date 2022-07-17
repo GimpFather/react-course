@@ -5,7 +5,7 @@ import expensesData from "./data/expenses";
 //components
 import Expenses from "./components/js/Expenses/Expenses";
 
-function App() {
+const App = () => {
 	const expenses = expensesData;
 
 	return (
@@ -15,6 +15,6 @@ function App() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default App;
