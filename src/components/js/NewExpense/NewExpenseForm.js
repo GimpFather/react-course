@@ -8,7 +8,6 @@ const NewExpenseForm = () => {
 		price: "",
 		date: "",
 	});
-	// const { title, price, date } = inputValue;
 
 	const inputsHandler = (event) => {
 		const { name, value } = event.target;
@@ -16,7 +15,6 @@ const NewExpenseForm = () => {
 			...prev,
 			[name]: value,
 		}));
-		console.log(inputValue);
 	};
 
 	const submitHandler = (event) => {

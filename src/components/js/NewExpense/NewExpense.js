@@ -4,9 +4,7 @@ import NewExpenseForm from "./NewExpenseForm";
 const NewExpense = () => {
 	return (
 		<Card className="new-expense">
-			<form>
-				<NewExpenseForm></NewExpenseForm>
-			</form>
+			<NewExpenseForm></NewExpenseForm>
 		</Card>
 	);
 };
