@@ -8,7 +8,7 @@ Disclaimer for poor `.scss` files. I really like writing styles, but at this mom
 
 Disclaimer for taking this project serious: As I said - I'm using video courses to refresh everything, so sometimes you gonna find repetitive code or static approaches. You shouldn't look at these! 
 
-# Developer things
+# Developer part
 
 ## Instalation
 
