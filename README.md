@@ -14,11 +14,14 @@ Disclaimer for taking this project serious: As I said - I'm using video courses 
 
 The project requires: 
 - Node 16 or higher.
+- Npm or Yarn.
 - Sass 1.53.0 or higher.
 
-The project is based on `create-react-app` so after downloading it and all dependencies we need to run `npm start` or `yarn start`.
+The project is based on `create-react-app`.<br>
+After downloading it install all dependencies `npm install` or `yarn install`. <br>
+Then just run `npm start` or `yarn start`.
 
 ## Build
 
-In order to build application you need to use `npm build` or `yarn build`.
+In order to build application you need to use `npm build` or `yarn build`.<br>
 You should also compile `.sass` files, but I didn't make yet a script for that. 
