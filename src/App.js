@@ -10,7 +10,6 @@ const App = () => {
 	const expenses = expensesData;
 
 	const addExpenseHandler = (expense) => {
-		console.log("in app js");
 		console.log(expense);
 	};
 
