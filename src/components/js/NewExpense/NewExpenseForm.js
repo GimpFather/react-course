@@ -1,61 +1,53 @@
 import { useState } from "react";
 
+import NewExpenseInput from "./NewExpenseInput";
+
 const NewExpenseForm = () => {
-	const [enteredTitle, setEnteredTitle] = useState();
-	const [enteredPrice, setEnteredPrice] = useState();
-	const [enteredDate, setEnteredDate] = useState();
+	const [inputValue, setInputValue] = useState({
+		title: "",
+		price: "",
+		date: "",
+	});
 
-	const titleChangeHandler = (event) => {
-		setEnteredTitle(event.target.value);
-	};
-
-	const priceChangeHandler = (event) => {
-		setEnteredPrice(event.target.value);
-	};
-
-	const dateChangeHandler = (event) => {
-		setEnteredDate(event.target.value);
+	const inputsHandler = (event) => {
+		const { name, value } = event.target;
+		setInputValue((prev) => ({
+			...prev,
+			[name]: value,
+		}));
 	};
 
 	const submitHandler = (event) => {
 		event.preventDefault();
-
-		const expensesData = {
-			title: enteredTitle,
-			price: enteredPrice,
-			date: new Date(enteredDate),
+		const expenseData = {
+			title: inputValue.title,
+			price: inputValue.price,
+			date: new Date(inputValue.date),
 		};
-
-		console.log(expensesData);
-
-		setEnteredTitle("");
-		setEnteredPrice("");
-		setEnteredDate("");
+		console.log(expenseData);
 	};
 
 	return (
 		<form onSubmit={submitHandler}>
 			<div className="new-expense__forms">
-				<div className="new-expense__form">
-					<label>Title</label>
-					<input
-						type="text"
-						onChange={titleChangeHandler}
-						value={enteredTitle}
-					/>
-				</div>
-				<div className="new-expense__form">
-					<label>Price</label>
-					<input
-						type="number"
-						onChange={priceChangeHandler}
-						value={enteredPrice}
-					/>
-				</div>
-				<div className="new-expense__form">
-					<label>Date</label>
-					<input type="date" onChange={dateChangeHandler} value={enteredDate} />
-				</div>
+				<NewExpenseInput
+					topic="title"
+					type="text"
+					onChange={inputsHandler}
+					value={inputValue.title}
+				></NewExpenseInput>
+				<NewExpenseInput
+					topic="price"
+					type="number"
+					onChange={inputsHandler}
+					value={inputValue.price}
+				></NewExpenseInput>
+				<NewExpenseInput
+					topic="date"
+					type="date"
+					onChange={inputsHandler}
+					value={inputValue.date}
+				></NewExpenseInput>
 			</div>
 			<div className="new-expense__actions">
 				<button type="submit">Add expense</button>
