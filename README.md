@@ -7,3 +7,18 @@ I base this revamp on Udemy and YouTube courses because the goal is to do litera
 Disclaimer for poor `.scss` files. I really like writing styles, but at this moment there are so many more important things to do, so I'm using pre-given styles in 99% of the examples.
 
 Disclaimer for taking this project serious: As I said - I'm using video courses to refresh everything, so sometimes you gonna find repetitive code or static approaches. You shouldn't look at these! 
+
+# Developer things
+
+## Instalation
+
+The project requires: 
+- Node 16 or higher.
+- Sass 1.53.0 or higher.
+
+The project is based on `create-react-app` so after downloading it and all dependencies we need to run `npm start` or `yarn start`.
+
+## Build
+
+In order to build application you need to use `npm build` or `yarn build`.
+You should also compile `.sass` files, but I didn't make yet a script for that. 
