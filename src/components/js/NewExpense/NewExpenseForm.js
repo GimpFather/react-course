@@ -21,7 +21,7 @@ const NewExpenseForm = (props) => {
 		event.preventDefault();
 		const expenseData = {
 			title: inputValue.title,
-			price: inputValue.price,
+			price: +inputValue.price,
 			date: new Date(inputValue.date),
 		};
 		props.onCancelForm();
