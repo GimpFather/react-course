@@ -1,5 +1,5 @@
 import Card from "../Card/Card";
-import NewExpenseForm from "./NewExpenseForm";
+import NewExpenseSwitch from "./NewExpenseSwitch";
 
 const NewExpense = (props) => {
 	const saveExpenseDataHandler = (enteredExpenseData) => {
@@ -11,9 +11,7 @@ const NewExpense = (props) => {
 	};
 	return (
 		<Card className="new-expense">
-			<NewExpenseForm
-				onSaveExpenseData={saveExpenseDataHandler}
-			></NewExpenseForm>
+			<NewExpenseSwitch event={saveExpenseDataHandler}></NewExpenseSwitch>
 		</Card>
 	);
 };
