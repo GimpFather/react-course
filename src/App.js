@@ -9,10 +9,15 @@ import NewExpense from "./components/js/NewExpense/NewExpense";
 const App = () => {
 	const expenses = expensesData;
 
+	const addExpenseHandler = (expense) => {
+		console.log("in app js");
+		console.log(expense);
+	};
+
 	return (
 		<div>
 			<div>
-				<NewExpense></NewExpense>
+				<NewExpense onAddExpense={addExpenseHandler}></NewExpense>
 			</div>
 			<div>
 				<Expenses expenses={expenses}></Expenses>

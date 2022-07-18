@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import NewExpenseInput from "./NewExpenseInput";
 
-const NewExpenseForm = () => {
+const NewExpenseForm = (props) => {
 	const [inputValue, setInputValue] = useState({
 		title: "",
 		price: "",
@@ -24,7 +24,7 @@ const NewExpenseForm = () => {
 			price: inputValue.price,
 			date: new Date(inputValue.date),
 		};
-		console.log(expenseData);
+		props.onSaveExpenseData(expenseData);
 	};
 
 	return (
