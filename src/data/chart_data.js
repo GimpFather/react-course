@@ -1,13 +1,13 @@
-const DYNAMIC_MONTHS = Array.from({ length: 12 }, (e, i) => {
-	return [
-		{
-			label: new Date(null, i + 1, null).toLocaleDateString("en", {
-				month: "short",
-			}),
-			value: 0,
-		},
-	];
-});
+// const DYNAMIC_MONTHS = Array.from({ length: 12 }, (e, i) => {
+// 	return [
+// 		{
+// 			label: new Date(null, i + 1, null).toLocaleDateString("en", {
+// 				month: "short",
+// 			}),
+// 			value: 0,
+// 		},
+// 	];
+// });
 
 const STATIC_MONTHS = [
 	{
