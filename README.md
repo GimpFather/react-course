@@ -8,7 +8,13 @@ Disclaimer for poor `.scss` files. I really like writing styles, but at this mom
 
 Disclaimer for taking this project serious: As I said - I'm using video courses to refresh everything, so sometimes you gonna find repetitive code or static approaches. You shouldn't look at these! 
 
-# Developer part
+# Branches - what can you find in this repo?
+
+- <a href="https://github.com/GimpFather/react-course/tree/dev-expenses">`dev-expenses`</a> is the main branch that has base React knowledge, based on some Udemy course. It's a static application for keeping tabs on your expenses.
+- <a href="https://github.com/GimpFather/react-course/tree/dev-todo">`dev-todo`</a> is the branch with a simple todo app. The main goal is refreshment of styling react component.
+- Branches like <a href="https://github.com/GimpFather/react-course/tree/better-form">`better-form`</a> or <a href="https://github.com/GimpFather/react-course/tree/chart-bug">`chart-bug`</a> are temporary branches for bugs or future ideas.
+
+# Developer part - setup
 
 ## Instalation
 
